@@ -21,7 +21,7 @@ $("input[type='text']").keypress(function(event){
         var listItem = $(this).val();
         $(this).val("");
         // add new list item to to-do list
-        $("ul").append("<li><span><i class='fa fa-trash'></i></span> " + listItem + "</li>");
+        $("ul").append("<li><span class='del'><i class='fa fa-trash'></i></span> " + listItem + "</li>");
     }
 });
 
