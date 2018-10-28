@@ -24,3 +24,8 @@ $("input[type='text']").keypress(function(event){
         $("ul").append("<li><span><i class='fa fa-trash'></i></span> " + listItem + "</li>");
     }
 });
+
+// toogle input for adding new list items when plus icon is clicked
+$(".fa-plus").click(function() {
+    $("input[type='text']").fadeToggle();
+});

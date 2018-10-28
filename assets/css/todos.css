@@ -1,3 +1,10 @@
+body {
+    font-family: 'Muli';
+    background: #D3CCE3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 h1 {
     background: #948E99;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2E1437, #948E99);  /* Chrome 10-25, Safari 5.1-6 */
@@ -9,48 +16,21 @@ h1 {
     font-weight: 400;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
 .fa-plus {
     float: right;
 }
 
-body {
-    font-family: 'Muli';
-    background: #D3CCE3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-li {
-    background-color: #ffffff;
-    height: 40px;
-    line-height: 40px;
-    color: #4e4e4e;
-}
-
-li:nth-child(2n) {
+#container {
+    width: 360px;
+    margin: 100px auto;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
     background-color: #f6f4f9;
 }
 
-.del {
-    background-color: #e91700;
-    height: 40px;
-    margin-right: 20px;
-    text-align: center;
-    color: #ffffff00;
-    width: 0;
-    display: inline-block;
-    transition: 0.2s linear;
-}
-
-li:hover .del {
-    width: 40px;
-    color: #ffffff;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 input {
@@ -69,11 +49,31 @@ input:focus {
     outline: none;
 }
 
-#container {
-    width: 360px;
-    margin: 100px auto;
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+li {
+    background-color: #ffffff;
+    height: 40px;
+    line-height: 40px;
+    color: #4e4e4e;
+}
+
+li:nth-child(2n) {
     background-color: #f6f4f9;
+}
+
+li:hover .del {
+    width: 40px;
+    color: #ffffff;
+}
+
+.del {
+    background-color: #e91700;
+    height: 40px;
+    margin-right: 20px;
+    text-align: center;
+    color: #ffffff00;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear;
 }
 
 .completed {
